@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "name": "Pencil",
+    "quantity": 34,
+    "price": 12,
+    "category": "education",
+    "description": "nalla pencil",
+    "image": "/images/1773121481912-268113259.jpg",
+    "createdAt": "2026-03-10T05:44:41.922Z"
+  }
+]

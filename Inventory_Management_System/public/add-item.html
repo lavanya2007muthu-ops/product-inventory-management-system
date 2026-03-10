@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Item - Inventory Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Your Website</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="add-item.html">Add Item</a></li>
+                    <li><a href="product-view.html">Work</a></li>
+                    <li><a href="gst-calc.html">Info</a></li>
+                </ul>
+                <a href="index.html#dashboard" class="btn-primary">Dashboard</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container" style="padding-top: 10rem;">
+        <div class="hero-content fade-up" style="max-width: 800px; margin: 0 auto 4rem; text-align: center;">
+            <h1 style="font-size: 3.5rem;">Add New Product</h1>
+            <p>Expand your inventory catalog with ease. Fill in the details below to list a new item in your system.</p>
+        </div>
+        
+        <div class="table-container fade-up" style="max-width: 600px; margin: 0 auto; padding: 3rem; border-radius: 30px;">
+            <form id="itemForm">
+                <div class="form-group">
+                    <label for="name">Product Name</label>
+                    <input type="text" id="name" placeholder="Enter product name" required>
+                </div>
+                <div class="form-group">
+                    <label for="quantity">Initial Quantity</label>
+                    <input type="number" id="quantity" placeholder="0" required>
+                </div>
+                <div class="form-group">
+                    <label for="price">Price (₹)</label>
+                    <input type="number" id="price" placeholder="0.00" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="category">Category</label>
+                    <input type="text" id="category" placeholder="Electronics, Clothing, etc.">
+                </div>
+                <div class="form-group">
+                    <label for="image">Product Image</label>
+                    <input type="file" id="image" accept="image/*">
+                </div>
+                <div class="form-group">
+                    <label for="description">Product Description</label>
+                    <textarea id="description" placeholder="Describe the product..."></textarea>
+                </div>
+                <button type="submit" class="btn-primary" style="width: 100%;">Add to Inventory</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
